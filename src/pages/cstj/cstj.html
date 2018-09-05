@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="title-text-z">参数调节</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #f8f8f8">
+  <ion-list>
+    <ion-item>
+      <ion-label>公路等级</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>有机质</ion-label>
+      <ion-select [(ngModel)]="gamin">
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>含泥量</ion-label>
+      <ion-select [(ngModel)]="gamg">
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>筛分</ion-label>
+      <ion-select [(ngModel)]="gamng">
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>硫酸盐含量</ion-label>
+      <ion-select [(ngModel)]="gming">
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>塑性指数</ion-label>
+      <ion-select [(ngModel)]="ging">
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>压碎值</ion-label>
+      <ion-input type="text" placeholder="123456789"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="secondary" style="width: 100%" (click)="goyplist()">确认信息，选择检测项</button>
+</ion-content>

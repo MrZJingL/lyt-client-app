@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title class="title-text-z">委托检测</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #f8f8f8">
+    <ion-list>
+        <ion-item class="list-font">
+            <ion-label color="primary">工程名称：</ion-label>
+            <ion-input placeholder="请输入工程名称"></ion-input>
+        </ion-item>
+        <ion-item class="list-font">
+            <ion-label color="primary">委托单位：</ion-label>
+            <ion-input placeholder="请输入委托单位"></ion-input>
+        </ion-item>
+        <ion-item class="list-font">
+            <ion-label color="primary">送 样 人：</ion-label>
+            <ion-input placeholder="请输入送样人"></ion-input>
+        </ion-item>
+        <ion-item class="list-font">
+            <ion-label color="primary">联系电话：</ion-label>
+            <ion-input type="number" placeholder="请输入联系电话"></ion-input>
+        </ion-item>
+        <ion-item class="list-font">
+            <ion-label  color="primary">公里等级</ion-label>
+            <ion-select [(ngModel)]="gaming" cancelText='取消' okText='确认'>
+                <ion-option value="nes">NES</ion-option>
+                <ion-option value="n64">Nintendo64</ion-option>
+                <ion-option value="ps">PlayStation</ion-option>
+                <ion-option value="genesis">Sega Genesis</ion-option>
+                <ion-option value="saturn">Sega Saturn</ion-option>
+                <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">取样日期：</ion-label>
+            <ion-datetime placeholder="请选择取样日期" displayFormat="YYYY/MM/DD" [(ngModel)]="myDate" max='{{maxTime}}' cancelText='取消' doneText='确认'></ion-datetime>
+        </ion-item>
+        <ion-item class="list-font">
+            <ion-label color="primary">试样用途：</ion-label>
+            <ion-input placeholder="请输入试样用途"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button color="secondary" style="width: 100%" (click)="goJclb()">确认信息，选择检测项</button>
+</ion-content>

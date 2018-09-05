@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="title-text-z">产品/项目/参数</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #f8f8f8">
+
+  <ion-grid text-center>
+    <ion-row style="font-size: 1.2em;" style="padding-left: 15%">
+      <ion-col col-4 *ngFor="let item of list,let i =index" (click)="chekFun(i)">{{item.value}}&nbsp;
+        <ion-icon name="checkmark-circle" [ngClass]="{'button-clear-ios-primary': item.chek,'button-clear-ios-my':!item.chek}"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+
+    <ion-item>
+
+      <ion-label>Pepperoni</ion-label>
+      <ion-checkbox [(ngModel)]="pepperoni" (ionChange)="updateCucumber()"></ion-checkbox>
+      <ion-badge item-end color="danger">推荐</ion-badge>
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label>Pepperoni</ion-label>
+      <ion-checkbox [(ngModel)]="pepperoi" (ionChange)="updateCucumber()"></ion-checkbox>
+      <ion-badge item-end color="danger">推荐</ion-badge>
+    </ion-item>
+    <ion-item>
+
+      <ion-label>Pepperoni</ion-label>
+      <ion-checkbox [(ngModel)]="peperoni" (ionChange)="updateCucumber()"></ion-checkbox>
+      <ion-badge item-end color="danger">推荐</ion-badge>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-checkbox [(ngModel)]="mushroms" (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-checkbox [(ngModel)]="muhrooms" (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-checkbox [(ngModel)]="musooms" (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-checkbox [(ngModel)]="musoms" (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+
+
+  </ion-list>
+
+  <button ion-button color="secondary" style="width: 100%" (click)="gocstj()">确认信息，选择检测项</button>
+</ion-content>
